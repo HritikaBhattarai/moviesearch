@@ -1,6 +1,4 @@
-/* -----------------------------------
-   THEME VARIABLES 
------------------------------------ */
+/* THEME VARIABLES */
 :root {
   --bg: #0d0d0d;
   --text: #ffffff;
@@ -20,9 +18,7 @@
   --secondary: #555;
 }
 
-/* -----------------------------------
-   GLOBAL
------------------------------------ */
+/* GLOBAL */
 body {
   margin: 0;
   background-color: var(--bg);
@@ -36,9 +32,7 @@ body {
   padding: 20px;
 }
 
-/* -----------------------------------
-   NAVBAR
------------------------------------ */
+/* NAVBAR */
 .navbar-modern {
   background-color: var(--card-bg);
   padding: 15px 25px;
@@ -88,9 +82,7 @@ body {
   opacity: 0.85;
 }
 
-/* -----------------------------------
-   HERO SECTION
------------------------------------ */
+/* HERO SECTION */
 .hero {
   text-align: center;
   padding: 60px 20px;
@@ -111,45 +103,49 @@ body {
 }
 
 /* SEARCH BAR */
-/* Unified Search Bar */
-.search-bar, .hero-search {
+.search-bar,
+.hero-search {
   width: 100%;
   max-width: 800px;
   display: flex;
   margin: 20px auto;
   border-radius: 12px;
-  overflow: hidden; /* keeps input and button together */
+  overflow: hidden;
 }
 
-.search-bar input, .hero-search input {
+.search-bar input,
+.hero-search input {
   flex: 1;
   padding: 14px 18px;
   font-size: 1rem;
-  border: none; /* remove border to unify with button */
+  border: none;
   outline: none;
   background-color: var(--card-bg);
   color: var(--text);
   transition: 0.2s;
 }
 
-.search-bar input:focus, .hero-search input:focus {
+.search-bar input:focus,
+.hero-search input:focus {
   background-color: var(--card-hover);
   box-shadow: 0 0 8px var(--accent);
 }
 
-/* Search Button next to input */
-.search-bar button, .hero-search button {
+/* Search Button which is next to input */
+.search-bar button,
+.hero-search button {
   padding: 14px 20px;
   font-size: 1rem;
   background-color: var(--card-bg);
   color: var(--text);
-  border: none; /* remove border so it merges with input */
+  border: none; /*to merge with input remove border */
   cursor: pointer;
   transition: 0.2s;
 }
 
 /* Hover effect: red */
-.search-bar button:hover, .hero-search button:hover {
+.search-bar button:hover,
+.hero-search button:hover {
   background-color: var(--accent);
   color: #fff;
 }
@@ -179,9 +175,7 @@ c
   background: var(--accent);
 }
 
-/* -----------------------------------
-   MOVIE GRID
------------------------------------ */
+/* MOVIE GRID */
 .movie-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
@@ -223,9 +217,7 @@ c
   padding: 0 10px;
 }
 
-/* -----------------------------------
-   LOADER / ERROR
------------------------------------ */
+/* LOADER / ERROR */
 .loader {
   text-align: center;
   font-size: 1.2rem;
@@ -239,9 +231,7 @@ c
   padding: 40px;
 }
 
-/* -----------------------------------
-   MOVIE DETAILS PAGE
------------------------------------ */
+/* MOVIE DETAILS PAGE*/
 .container img {
   width: 260px;
   border-radius: 10px;
@@ -263,9 +253,6 @@ c
   opacity: 0.85;
 }
 
-/* -----------------------------------
-   RESPONSIVE
------------------------------------ */
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2.3rem;

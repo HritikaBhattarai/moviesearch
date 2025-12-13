@@ -1,4 +1,3 @@
-// src/pages/Favorites.jsx
 import React from "react";
 import { useFavorites } from "../context/FavoritesContext";
 import { MovieGrid } from "../components/MovieCard";

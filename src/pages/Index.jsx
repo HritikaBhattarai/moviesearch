@@ -31,11 +31,8 @@ export default function Index() {
 
   return (
     <div className="home-wrapper">
-      {/* HERO SECTION */}
       <section className="hero">
-        <h1>
-          Discover <span>Movies</span>
-        </h1>
+        <h1> Discover <span>Movies</span></h1>
         
         <div className="hero-search">
           <SearchBar onSearch={fetchMovies} />
@@ -51,7 +48,6 @@ export default function Index() {
           </div>
       </section>
 
-      {/* MOVIES SECTION */}
       {loading && <Loader />}
       {error && <ErrorMessage message={error} />}
       {!loading && !error && <MovieGrid movies={movies} />}

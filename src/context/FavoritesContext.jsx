@@ -1,4 +1,3 @@
-// src/context/FavoritesContext.jsx
 import React, { createContext, useContext, useEffect, useState } from "react";
 
 const FavoritesContext = createContext();
@@ -6,13 +5,13 @@ const FavoritesContext = createContext();
 export function FavoritesProvider({ children }) {
   const [favorites, setFavorites] = useState([]);
 
-  // Load data initially
+ 
   useEffect(() => {
     const stored = localStorage.getItem("favorites");
     if (stored) setFavorites(JSON.parse(stored));
   }, []);
 
-  // Save to localStorage
+ 
   useEffect(() => {
     localStorage.setItem("favorites", JSON.stringify(favorites));
   }, [favorites]);
@@ -31,8 +30,7 @@ export function FavoritesProvider({ children }) {
 
   return (
     <FavoritesContext.Provider
-      value={{ favorites, addFavorite, removeFavorite, isFavorite }}
-    >
+      value={{ favorites, addFavorite, removeFavorite, isFavorite }} >
       {children}
     </FavoritesContext.Provider>
   );

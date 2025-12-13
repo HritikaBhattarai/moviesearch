@@ -1,4 +1,3 @@
-// src/pages/MovieDetails.jsx
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { API_URL, API_KEY } from "../config";
