@@ -26,11 +26,9 @@ export function FavoritesProvider({ children }) {
     setFavorites(favorites.filter((m) => m.imdbID !== id));
   };
 
-  const isFavorite = (id) => favorites.some((m) => m.imdbID === id);
-
   return (
     <FavoritesContext.Provider
-      value={{ favorites, addFavorite, removeFavorite, isFavorite }} >
+      value={{ favorites, addFavorite, removeFavorite }} >
       {children}
     </FavoritesContext.Provider>
   );

@@ -42,11 +42,10 @@ body {
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
-  z-index: 10;
 }
 
 .logo {
-  font-size: 1.4rem;
+  font-size: 22px;
   font-weight: bold;
   color: var(--accent);
 }
@@ -89,7 +88,7 @@ body {
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 48px;
   margin-bottom: 10px;
 }
 
@@ -99,7 +98,7 @@ body {
 
 .hero p {
   color: var(--secondary);
-  font-size: 1.1rem;
+  font-size: 17px;
 }
 
 /* SEARCH BAR */
@@ -117,7 +116,7 @@ body {
 .hero-search input {
   flex: 1;
   padding: 14px 18px;
-  font-size: 1rem;
+  font-size: 16px;
   border: none;
   outline: none;
   background-color: var(--card-bg);
@@ -125,17 +124,11 @@ body {
   transition: 0.2s;
 }
 
-.search-bar input:focus,
-.hero-search input:focus {
-  background-color: var(--card-hover);
-  box-shadow: 0 0 8px var(--accent);
-}
-
 /* Search Button which is next to input */
 .search-bar button,
 .hero-search button {
   padding: 14px 20px;
-  font-size: 1rem;
+  font-size: 16px;
   background-color: var(--card-bg);
   color: var(--text);
   border: none; /*to merge with input remove border */
@@ -149,7 +142,7 @@ body {
   background-color: var(--accent);
   color: #fff;
 }
-c
+
 /* POPULAR TAGS */
 .popular-tags {
   margin-top: 20px;
@@ -178,7 +171,7 @@ c
 /* MOVIE GRID */
 .movie-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));/*autofillcreate as many columns as it can fit in the container */
   gap: 25px;
   padding: 40px 20px;
 }
@@ -190,7 +183,7 @@ c
   padding-bottom: 10px;
   overflow: hidden;
   cursor: pointer;
-  transition: all 0.25s ease;
+  transition: all 0.25s ;
   border: 1px solid var(--border);
 }
 
@@ -206,28 +199,28 @@ c
 }
 
 .movie-card h3 {
-  font-size: 1rem;
+  font-size: 16px;
   margin: 10px 0 5px;
   padding: 0 10px;
 }
 
 .movie-card p {
   color: var(--secondary);
-  font-size: 0.85rem;
+  font-size: 13px;
   padding: 0 10px;
 }
 
 /* LOADER / ERROR */
 .loader {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 19px;
   padding: 40px;
 }
 
 .error {
   color: #ff4d4d;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 17px;
   padding: 40px;
 }
 
@@ -242,7 +235,7 @@ c
   background: var(--accent);
   color: #fff;
   padding: 10px 18px;
-  font-size: 1rem;
+  font-size: 16px;
   border-radius: 8px;
   border: none;
   cursor: pointer;
@@ -255,7 +248,7 @@ c
 
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 2.3rem;
+    font-size: 36px;
   }
 
   .hero-search input {

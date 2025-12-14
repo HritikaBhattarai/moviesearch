@@ -44,7 +44,7 @@ export default function Index() {
           <button onClick={() => fetchMovies("Batman")}>Batman</button>
           <button onClick={() => fetchMovies("Spiderman")}>Spider Man</button>
           <button onClick={() => fetchMovies("Inception")}>Inception</button>
-          <button onClick={() => fetchMovies("Matrix")}>Matrix</button>
+          <button onClick={() => fetchMovies("Home")}>Home</button>
           </div>
       </section>
 
